@@ -3,47 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MULTIKOMP JEMBER | Company Profile Pra-PKL RPL</title>
+    <meta name="description" content="Company Profile Multikomp Jember - Solusi Penjualan dan Service Komputer, Laptop, Printer, Proyektor, Aksesoris, & CCTV di Jember.">
 
-    <title>Company Profile | Pra-PKL RPL</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tech-dark fixed-top shadow-sm" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
-                COMPANY PROFILE
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <img src="images/logo.png" alt="Logo Multikomp" class="navbar-logo">
+                <div class="brand-text d-flex flex-column">
+                    <span class="fw-bold brand-title">MULTIKOMP JEMBER</span>
+                    <span class="brand-subtitle">Company Profile Pra-PKL RPL</span>
+                </div>
             </a>
 
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0 shadow-none" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Beranda</a>
+                        <a class="nav-link active" href="#home">
+                            <i class="bi bi-house-door me-1 d-lg-none"></i>Beranda
+                        </a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Tentang Kami</a>
+                        <a class="nav-link" href="#about">
+                            <i class="bi bi-info-circle me-1 d-lg-none"></i>Tentang Kami
+                        </a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Layanan</a>
+                        <a class="nav-link" href="#services">
+                            <i class="bi bi-grid-fill me-1 d-lg-none"></i>Layanan
+                        </a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Kontak</a>
+                        <a class="nav-link" href="#contact">
+                            <i class="bi bi-telephone-fill me-1 d-lg-none"></i>Kontak
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -51,276 +72,379 @@
     </nav>
 
 
-    <!-- BERANDA -->
-    <section id="home" class="hero">
-        <div class="container text-center">
+    <!-- HOME / HERO -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="badge-tech mb-3">
+                        <i class="bi bi-laptop-fill me-1"></i> Solusi Komputer, Laptop &amp; Teknologi
+                    </div>
+                    <h1 class="hero-title fw-bold text-white mb-3">
+                        MULTIKOMP JEMBER
+                    </h1>
+                    <h2 class="hero-tagline h5 text-primary-light mb-3">
+                        Solusi Penjualan &amp; Service Teknologi Terpercaya
+                    </h2>
+                    <p class="hero-desc text-light-muted mb-4">
+                        Multikomp Jember bergerak di bidang penjualan dan layanan teknologi komputer, laptop, printer, proyektor, aksesoris, CCTV, serta berbagai kebutuhan teknologi lainnya.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                        <a href="#services" class="btn btn-primary btn-lg rounded-pill px-4">
+                            <i class="bi bi-grid me-2"></i>Lihat Layanan
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                            <i class="bi bi-geo-alt me-2"></i>Hubungi Kami
+                        </a>
+                    </div>
+                </div>
 
-            <div class="logo-placeholder">
-                LOGO
+                <div class="col-lg-6">
+                    <div class="hero-visual-card shadow-lg p-3 p-md-4 rounded-4 bg-glass text-white">
+                        <div class="text-center mb-3">
+                            <img src="images/logo.png" alt="Logo Multikomp Jember" class="hero-logo mb-2">
+                            <h3 class="h5 fw-bold mb-0">Multikomp Jember</h3>
+                            <small class="text-muted">Layanan &amp; Penjualan Produk Teknologi</small>
+                        </div>
+                        <div class="row g-3 hero-gallery">
+                            <div class="col-6">
+                                <div class="gallery-item rounded-3 overflow-hidden shadow-sm">
+                                    <img src="images/toko-depan.png" alt="Tampak depan Multikomp Jember" class="img-fluid">
+                                    <div class="gallery-caption">Tampak Depan Toko</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="gallery-item rounded-3 overflow-hidden shadow-sm">
+                                    <img src="images/toko-dalam.png" alt="Bagian dalam Multikomp Jember" class="img-fluid">
+                                    <div class="gallery-caption">Bagian Dalam Toko</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="profile-image">
-    <div class="profile-placeholder">
-        FOTO PERUSAHAAN
-    </div>
-</div>
-
-            <h1 class="display-4 fw-bold">
-                NAMA PERUSAHAAN / INSTANSI
-            </h1>
-
-            <p class="lead">
-                Website Company Profile Tempat PKL
-            </p>
-
-            <p class="hero-text">
-                Informasi mengenai profil, bidang usaha, layanan,
-                dan kontak perusahaan atau instansi tujuan PKL.
-            </p>
-
-            <a href="#about" class="btn btn-primary btn-lg">
-                Selengkapnya
-            </a>
-
         </div>
     </section>
 
 
     <!-- TENTANG KAMI -->
-    <section id="about" class="section-padding">
+    <section id="about" class="section-padding bg-white">
         <div class="container">
-
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Tentang Kami</h2>
-                <p class="text-muted">
-                    Mengenal lebih dekat perusahaan atau instansi
+            <div class="section-header text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2">PROFIL PERUSAHAAN</span>
+                <h2 class="fw-bold text-dark">Tentang Kami</h2>
+                <p class="text-muted max-w-600 mx-auto">
+                    Mengenal lebih dekat Multikomp Jember sebagai pusat penyedia dan layanan teknologi terpercaya.
                 </p>
             </div>
 
             <div class="row g-4">
-
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h4>Sejarah Singkat</h4>
-
-                            <p>
-                                Perusahaan atau instansi ini merupakan
-                                tempat tujuan PKL yang bergerak dalam
-                                bidang tertentu. Informasi sejarah
-                                perusahaan akan diperbarui setelah
-                                mendapatkan tempat PKL.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h4>Visi & Misi</h4>
-
-                            <h6 class="mt-3">Visi</h6>
-                            <p>
-                                Menjadi perusahaan atau instansi yang
-                                profesional dan memberikan pelayanan
-                                terbaik.
-                            </p>
-
-                            <h6>Misi</h6>
-                            <p>
-                                Memberikan layanan yang berkualitas,
-                                profesional, dan terus berkembang
-                                mengikuti kebutuhan masyarakat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
+                <!-- Profil Utama -->
                 <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h4>Nilai & Tim</h4>
-
-                            <p>
-                                Mengutamakan profesionalitas,
-                                tanggung jawab, kedisiplinan,
-                                pelayanan, dan kerja sama dalam
-                                menjalankan kegiatan perusahaan.
-                            </p>
+                    <div class="card card-custom border-0 shadow-sm p-3 p-md-4">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-2 text-center">
+                                <div class="icon-shape bg-primary text-white mx-auto rounded-circle">
+                                    <i class="bi bi-building fs-2"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h3 class="h4 fw-bold text-dark mb-2">Profil Singkat</h3>
+                                <p class="text-secondary mb-0 leading-relaxed">
+                                    <strong>Multikomp Jember</strong> bergerak di bidang penjualan dan layanan teknologi komputer, laptop, printer, proyektor, aksesoris, CCTV, serta kebutuhan teknologi lainnya. Berlokasi di kawasan strategis Sumbersari, Jember, kami hadir untuk memberikan pelayanan profesional dan solusi kebutuhan teknologi bagi perorangan, sekolah, instansi, maupun usaha.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Sejarah Singkat -->
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-square bg-primary-subtle text-primary rounded-3">
+                                    <i class="bi bi-clock-history fs-4"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 text-dark">Sejarah Singkat</h3>
+                            </div>
+                            <div class="placeholder-box p-3 rounded-3 bg-light border-start border-primary border-4">
+                                <p class="text-muted mb-0 small">
+                                    <i class="bi bi-info-circle text-primary me-1"></i>
+                                    <em>[Informasi sejarah resmi perusahaan akan diperbarui setelah data/dokumen dari tempat PKL diperoleh.]</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visi & Misi -->
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-square bg-primary-subtle text-primary rounded-3">
+                                    <i class="bi bi-compass fs-4"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 text-dark">Visi &amp; Misi</h3>
+                            </div>
+
+                            <div class="mb-3">
+                                <h4 class="h6 fw-bold text-dark mb-1"><i class="bi bi-eye text-primary me-2"></i>Visi</h4>
+                                <div class="placeholder-box p-3 rounded-3 bg-light border-start border-primary border-3">
+                                    <p class="text-muted mb-0 small">
+                                        <em>[Visi resmi perusahaan akan diperbarui sesuai dokumen tempat PKL.]</em>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="h6 fw-bold text-dark mb-1"><i class="bi bi-bullseye text-primary me-2"></i>Misi</h4>
+                                <div class="placeholder-box p-3 rounded-3 bg-light border-start border-primary border-3">
+                                    <p class="text-muted mb-0 small">
+                                        <em>[Misi resmi perusahaan akan diperbarui sesuai dokumen tempat PKL.]</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nilai & Pelayanan -->
+                <div class="col-12">
+                    <div class="card card-custom border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="icon-square bg-primary-subtle text-primary rounded-3">
+                                    <i class="bi bi-shield-check fs-4"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-0 text-dark">Nilai &amp; Pelayanan</h3>
+                            </div>
+                            <p class="text-secondary mb-0 leading-relaxed">
+                                Mengutamakan profesionalitas, keandalan teknis, kedisiplinan, serta kualitas pelayanan terbaik dalam memenuhi setiap kebutuhan hardware, software, dan jaringan perangkat Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- LAYANAN -->
-    <section id="services" class="section-padding bg-light">
+    <section id="services" class="section-padding bg-light-tech">
         <div class="container">
-
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Layanan / Produk</h2>
-                <p class="text-muted">
-                    Layanan atau fungsi utama perusahaan
+            <div class="section-header text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2">SOLUSI KAMI</span>
+                <h2 class="fw-bold text-dark">Layanan &amp; Produk</h2>
+                <p class="text-muted max-w-600 mx-auto">
+                    Berbagai layanan teknologi komputer dan perlengkapan terlengkap dari Multikomp Jember.
                 </p>
             </div>
 
-            <div class="row g-4">
-
-                <!-- LAYANAN 1 -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="service-icon">
-                                01
-                            </div>
-
-                            <h4>Layanan Pertama</h4>
-
-                            <p>
-                                Deskripsi mengenai layanan atau
-                                produk pertama perusahaan.
-                            </p>
+            <div class="row g-4 justify-content-center">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="bi bi-pc-display"></i>
                         </div>
+                        <h3 class="h5 fw-bold mb-3 text-dark">Penjualan &amp; Service Komputer</h3>
+                        <p class="text-muted mb-0 small leading-relaxed">
+                            Penjualan PC desktop, paket komputer kantor/sekolah, perakitan PC custom, perawatan hardware, serta perbaikan sistem komputer.
+                        </p>
                     </div>
                 </div>
 
-
-                <!-- LAYANAN 2 -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="service-icon">
-                                02
-                            </div>
-
-                            <h4>Layanan Kedua</h4>
-
-                            <p>
-                                Deskripsi mengenai layanan atau
-                                produk kedua perusahaan.
-                            </p>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="bi bi-laptop"></i>
                         </div>
+                        <h3 class="h5 fw-bold mb-3 text-dark">Penjualan &amp; Service Laptop</h3>
+                        <p class="text-muted mb-0 small leading-relaxed">
+                            Penjualan unit laptop baru &amp; berkualitas, perbaikan segala kerusakan laptop (layar, keyboard, mainboard), dan pembersihan internal.
+                        </p>
                     </div>
                 </div>
 
-
-                <!-- LAYANAN 3 -->
-                <div class="col-md-4">
-                    <div class="card service-card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="service-icon">
-                                03
-                            </div>
-
-                            <h4>Layanan Ketiga</h4>
-
-                            <p>
-                                Deskripsi mengenai layanan atau
-                                produk ketiga perusahaan.
-                            </p>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="bi bi-printer"></i>
                         </div>
+                        <h3 class="h5 fw-bold mb-3 text-dark">Printer &amp; Proyektor</h3>
+                        <p class="text-muted mb-0 small leading-relaxed">
+                            Penjualan unit printer dan proyektor, penyediaan tinta refill/toner, service kendala mekanis printer, serta suku cadang proyektor.
+                        </p>
                     </div>
                 </div>
 
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="bi bi-camera-video"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3 text-dark">Pemasangan CCTV</h3>
+                        <p class="text-muted mb-0 small leading-relaxed">
+                            Layanan konsultasi, instalasi paket kamera CCTV indoor/outdoor, konfigurasi DVR online HP, serta pemeliharaan sistem keamanan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="service-icon mx-auto mb-3">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3 text-dark">Aksesoris &amp; Upgrade Laptop</h3>
+                        <p class="text-muted mb-0 small leading-relaxed">
+                            Penyediaan aksesoris (keyboard, mouse, charger, flashdisk) serta layanan upgrade RAM dan penambahan SSD agar laptop lebih cepat.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- KONTAK -->
-    <section id="contact" class="section-padding">
+    <section id="contact" class="section-padding bg-white">
         <div class="container">
-
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Kontak</h2>
-                <p class="text-muted">
-                    Informasi kontak perusahaan atau instansi
+            <div class="section-header text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-2">LOKASI &amp; KONTAK</span>
+                <h2 class="fw-bold text-dark">Kontak Perusahaan</h2>
+                <p class="text-muted max-w-600 mx-auto">
+                    Kunjungi toko kami atau hubungi tim Multikomp Jember untuk informasi dan konsultasi produk.
                 </p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 align-items-stretch">
+                <!-- Card Informasi Kontak -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm h-100 p-4 card-custom d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 fw-bold mb-4 text-dark border-bottom pb-3">
+                                <i class="bi bi-card-heading me-2 text-primary"></i>Informasi Kontak
+                            </h3>
 
-                <div class="col-md-6">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="contact-icon bg-primary-subtle text-primary rounded-circle flex-shrink-0">
+                                    <i class="bi bi-geo-alt-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1 text-dark">Alamat Perusahaan</h4>
+                                    <p class="text-muted mb-0 small leading-relaxed">
+                                        Jl. Kalimantan No. 3A, Krajan Timur, Sumbersari, Kabupaten Jember, Jawa Timur 68121
+                                    </p>
+                                </div>
+                            </div>
 
-                            <h4>Informasi Kontak</h4>
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="contact-icon bg-primary-subtle text-primary rounded-circle flex-shrink-0">
+                                    <i class="bi bi-telephone-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1 text-dark">Telepon &amp; WhatsApp</h4>
+                                    <p class="text-muted mb-2 small fw-semibold">
+                                        0851-0084-5949
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <a href="https://wa.me/6285100845949" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-success rounded-pill px-3">
+                                            <i class="bi bi-whatsapp me-1"></i>WhatsApp
+                                        </a>
+                                        <a href="tel:085100845949" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+                                            <i class="bi bi-telephone me-1"></i>Telepon
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <p>
-                                <strong>Alamat:</strong><br>
-                                Alamat perusahaan akan diisi setelah
-                                mendapatkan tempat PKL.
-                            </p>
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <div class="contact-icon bg-primary-subtle text-primary rounded-circle flex-shrink-0">
+                                    <i class="bi bi-laptop-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1 text-dark">Bidang Layanan</h4>
+                                    <p class="text-muted mb-0 small leading-relaxed">
+                                        Penjualan dan layanan teknologi komputer, laptop, printer, proyektor, aksesoris, CCTV, serta kebutuhan teknologi lainnya.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                            <p>
-                                <strong>Telepon:</strong><br>
-                                08xxxxxxxxxx
-                            </p>
-
-                            <p>
-                                <strong>Email:</strong><br>
-                                email@perusahaan.com
-                            </p>
-
+                        <div class="p-3 bg-light rounded-3 mt-3 border">
+                            <small class="text-muted d-block text-center">
+                                <i class="bi bi-check-circle-fill text-success me-1"></i> Siap melayani kebutuhan teknologi Anda di Sumbersari, Jember.
+                            </small>
                         </div>
                     </div>
                 </div>
 
+                <!-- Card Google Maps -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm h-100 p-4 card-custom d-flex flex-column">
+                        <h3 class="h5 fw-bold mb-3 text-dark border-bottom pb-3">
+                            <i class="bi bi-map-fill me-2 text-primary"></i>Lokasi Google Maps
+                        </h3>
+                        
+                        <div class="map-wrapper rounded-4 overflow-hidden shadow-sm flex-grow-1 mb-3 position-relative" style="min-height: 280px;">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Multikomp%20Jember%2C%20Jl.%20Kalimantan%20No.%203A%2C%20Krajan%20Timur%2C%20Sumbersari%2C%20Kabupaten%20Jember%2C%20Jawa%20Timur%2068121&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0; position: absolute; top:0; left:0; right:0; bottom:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Peta Lokasi Multikomp Jember">
+                            </iframe>
+                        </div>
 
-                <div class="col-md-6">
-                    <div class="map-placeholder">
-                        <h4>Google Maps</h4>
-                        <p>
-                            Lokasi Google Maps akan ditambahkan
-                            setelah mendapatkan perusahaan PKL.
-                        </p>
+                        <a href="https://maps.app.goo.gl/27kXbNSjH5ZLq5zs5" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill w-100 py-2.5 fw-semibold d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-geo-alt-fill"></i> Buka di Google Maps
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-   <!-- IDENTITAS PEMBUAT -->
-<section class="student-info">
-    <div class="container text-center">
 
-        <p class="mb-1">Website dibuat oleh</p>
+    <!-- IDENTITAS PEMBUAT -->
+    <section class="student-info py-4">
+        <div class="container text-center">
+            <div class="student-card p-3 p-md-4 bg-white rounded-4 shadow-sm max-w-700 mx-auto border">
+                <p class="text-muted small mb-1">Website Company Profile ini disusun oleh:</p>
+                <h4 class="fw-bold text-dark mb-1">Muhammad Irsyadul Ibad</h4>
+                <p class="text-primary fw-semibold mb-0 small">Siswa Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+            </div>
+        </div>
+    </section>
 
-        <h4 class="fw-bold">
-            Muhammad Irsyadul Ibad
-        </h4>
-
-        <p class="text-muted mb-0">
-            Siswa Jurusan Rekayasa Perangkat Lunak (RPL)
-        </p>
-
-    </div>
-</section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-4">
-
-        <p class="mb-1">
-            © 2026 Company Profile Pra-PKL RPL
-        </p>
-
-        <small>
-            Dibuat menggunakan HTML, CSS & Bootstrap
-        </small>
-
+    <footer class="bg-tech-dark text-white text-center py-4">
+        <div class="container">
+            <h4 class="h6 fw-bold mb-2 text-primary-light tracking-wide">MULTIKOMP JEMBER</h4>
+            <p class="mb-1 text-light-muted small">
+                © 2026 Multikomp Jember &bull; Company Profile Pra-PKL RPL
+            </p>
+            <small class="text-muted">
+                Dibuat menggunakan HTML, CSS &amp; Bootstrap
+            </small>
+        </div>
     </footer>
 
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JavaScript -->
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 
 </body>
